@@ -32,3 +32,5 @@ jz: 剑指Offer
 | lt.7 | Reverse Integer| easy | ------- ||
 | lt.8 | String to Integer (atoi) | medium| ------- ||
 | lt.221 | Maximal Square    | medium | ------ |dp|
+| lt.279 |Perfect Squares | medium | ------ |dp, bfs|
+PerfectSquares
