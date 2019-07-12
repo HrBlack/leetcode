@@ -25,12 +25,11 @@ jz: 剑指Offer
 
 | # | Name | Difficulty | Solution |Category|
 | ------ | ------- | ------- | ------- | --|
-| lt.1 | Two Sum | easy | ----|array|
-| lt.4 | Median of Two Sorted Arrays| hard| ------- ||
-| lt.5 | Longest Palindromic Substring  | easy | ------- ||
-| lt.6 | ZigZag Conversion | easy | ------- ||
-| lt.7 | Reverse Integer| easy | ------- ||
-| lt.8 | String to Integer (atoi) | medium| ------- ||
-| lt.221 | Maximal Square    | medium | ------ |dp|
+| lt.1 | Two Sum | easy | [python]|array|
+| lt.4 | Median of Two Sorted Arrays| hard| [python] ||
+| lt.5 | Longest Palindromic Substring  | easy | [python] ||
+| lt.6 | ZigZag Conversion | easy | [python] ||
+| lt.7 | Reverse Integer| easy | [python] ||
+| lt.8 | String to Integer (atoi) | medium| [python]||
+| lt.221 | Maximal Square    | medium | [python] |dp|
 | lt.279 |Perfect Squares | medium |[python](https://github.com/HrBlack/leetcode/blob/master/Algorithms/PerfectSquares.py)|dp, bfs|
-PerfectSquares
