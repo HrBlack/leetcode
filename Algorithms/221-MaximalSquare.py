@@ -1,9 +1,9 @@
 class Solution:
     def maximalSquare(self, matrix: List[List[str]]) -> int:
         # dp
-		# 去找以matrix[row][col]为右下角的正方形，这样它只取决于up、left和diagonal
-		# 另外：本答案做到了只用一个数组来维护，注意有一个left与diag的互换
-		size = 0
+	# 去找以matrix[row][col]为右下角的正方形，这样它只取决于up、left和diagonal
+	# 另外：本答案做到了只用一个数组来维护，注意有一个left与diag的互换
+	size = 0
         if not matrix:
             return size
         prev_row = [0 for i in range(len(matrix[0]))]

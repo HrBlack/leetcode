@@ -58,7 +58,7 @@ class Solution:
 class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         # 一定注意，endWord必须在wordList里面，这是题目规则
-		# 上次在这里被卡了好久
+	# 上次在这里被卡了好久
         if endWord not in wordList:
             return 0
         forward = {beginWord}
@@ -67,11 +67,11 @@ class Solution:
         step = 2
         # wordList.discard(beginWord)
         while forward:
-			# 三个for循环叠加，需要注意顺序！
+            # 三个for循环叠加，需要注意顺序！
             forward = wordList & {word[:i] + letter + word[i+1:] for word in forward for i in range(len(word)) for letter in 'abcdefghigklmnopqrstuvwxyz'}
             if forward & backward:
                 return step
-			# 优化的核心：谁的数目少就从谁那里开始遍历
+            # 优化的核心：谁的数目少就从谁那里开始遍历
             if len(forward) > len(backward):
                 forward, backward = backward, forward
             step += 1

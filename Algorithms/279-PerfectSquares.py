@@ -26,7 +26,7 @@ class Solution:
 class Solution:
     def numSquares(self, n: int) -> int:
         # DP
-		# 从前向后遍历，但DP在这种问题中并不管用，因为nums里的元素跨度很大
+	# 从前向后遍历，但DP在这种问题中并不管用，因为nums里的元素跨度很大
         i = 1
         while i*i <= n:
             i += 1
