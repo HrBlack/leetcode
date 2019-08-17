@@ -1,16 +1,16 @@
 # 维护一个temp数组，在现有的序列基础上，将当前的num依次插入进去
-# 时间：O（n^2）；空间：O（n）
+# 时间：O(n*n!)；空间：O(n)
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
         if not nums:
             return []
-        temp, result = [], [[]]
-        for i, num in enumerate(nums):
-            for j, item in enumerate(result):
-                for l in range(len(item)+1):
+        result = [[]]
+        for num in nums:
+			temp = []
+            for item in result:
+                for l in range(len(item)+1):  # 插入至0-n的任意位置
                     temp.append(item[:l] + [num] + item[l:])
             result = temp
-            temp = []
         return result
 
 
