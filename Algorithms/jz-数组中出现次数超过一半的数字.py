@@ -11,7 +11,8 @@ class Solution:
             else:
                 count -= 1
         count = 0
-        for i in range(len(nums)):
+        # 确定该nums值是出现了一半以上
+		for i in range(len(nums)):
             if nums[i] == result:
                 count += 1
         if 2 * count > len(nums):
